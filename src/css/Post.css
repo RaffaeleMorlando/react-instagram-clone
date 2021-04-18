@@ -1,0 +1,93 @@
+.post {
+    width: 100%;
+    min-height: 500px;
+    border: var(--border);
+    border-radius: var(--radius);
+    background-color: var(--colorWhite);
+    margin-bottom: 60px;
+}
+.post_user_info {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: var(--colorWhite);
+    padding: var(--paddingPost);
+}
+.user_rounded_icon {
+    margin-right: 10px;
+    width: 40px;
+    cursor: pointer;
+}
+.post_user_info > .username_post {
+    font-weight: bold;
+}
+.dots_icon {
+    margin-left: auto;
+    width: 15px;
+    cursor: pointer;
+}
+.post_image {
+    min-height: 300px;
+}
+.post_image > img {
+    max-width: 100% !important;
+}
+.post_interactions {
+    min-height: 200px;
+}
+.reactions {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: var(--paddingPost);
+}
+.reactions img {
+    width: 25px;
+    cursor: pointer;
+}
+.reactions_left > img {
+    margin-right: 15px;
+}
+.marker_icon {
+    margin-left: auto;
+}
+.like {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding: var(--paddingPost);
+    font-size: 13px;
+}
+.like_rounded_icon {
+    width: 20px;
+}
+.first_like_user, .post_number_likes {
+    font-weight: bold;
+    padding: 0 5px;
+}
+.user_post_description {
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    padding: var(--paddingPost);
+}
+.user_post_description > p {
+    font-size: 14px;
+    /* height: 30px; */
+    border: 1px solid red;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.username {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.comments {
+    min-height: 80px;
+    padding: var(--paddingPost);
+}
+.post_datetime {
+    height: 20px;
+    padding: var(--paddingPost);
+}

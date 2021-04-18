@@ -1,0 +1,12 @@
+.search_costum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_costum > input {
+    text-align: center;
+    padding: 4px 20px;
+    outline: none;
+    border: var(--border);
+    background-color: var(--mainBg);
+}

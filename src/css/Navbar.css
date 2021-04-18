@@ -1,0 +1,27 @@
+.navbar_costum {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    width: 70%;
+    margin: auto;
+    height: 100%;
+}
+.logo_container {
+    display: flex;
+    align-items: center;
+}
+.logo_container > img {
+    width: 50%;
+    height: 60%;
+    object-fit: contain;
+    object-position: center;
+}
+.navbar_options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar_options > img {
+    width: 22px;
+    margin: 0 10px;
+}

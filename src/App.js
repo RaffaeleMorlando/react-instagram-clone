@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
+import {useEffect,useState} from 'react';
+import Header from './components/Header'
+import Main from './components/Main';
+
 
 function App() {
+
+  const [stories, setStories] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get('https://flynn.boolean.careers/exercises/api/boolgram/profiles')
+      .then(response => {
+        setStories(response.data);
+      })
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Main stories={stories} />
     </div>
   );
+
 }
 
 export default App;

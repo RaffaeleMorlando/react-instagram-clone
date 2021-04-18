@@ -1,0 +1,33 @@
+.form_comments {
+    display: flex;
+    align-items: center;
+    padding: var(--paddingPost);
+    min-height: 60px;
+    max-height: 80px;
+    border-top: 1px solid rgba(179, 178, 178, 0.427);
+}
+.form_comments > img {
+    margin-right: 10px;
+}
+.form_comments > form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.form_comments textarea {
+    width: 90%;
+    resize: none;
+    outline: none;
+    border: none;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.form_comments input[type=button] {
+    width: 10%;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+    color: #0095f6;
+    text-align: end;
+    font-size: 15px;
+}
